@@ -49,7 +49,7 @@ const App = () => {
       <button onClick={() => createDato("Nuevo Registro")}>Agregar</button>
       
       <ul>
-        {datos.map((item) => (
+        {Object.values(datos).map((item) => (
           <li key={item.id}>
             {item.nombre}
             <button onClick={() => updateDato(item.id, "Editado")}>Editar</button>
